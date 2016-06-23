@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>juice</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="js/index.js"></script>
+
+<style>
+body {
+    font-size: 24px;
+}
+
+h1 {
+    color: orange;
+    text-align: center;
+    line-height: 100px;
+}
+</style>
+</head>
+
+<body>
+    <h1>Welcome to Juice!</h1>
+
+    <ul class="ju-tab">
+        <!-- <li data-tabindex="0"> -->
+        <li class="ju-tab-li active">
+            <span>标签页0</span>
+        </li>
+        <li class="ju-tab-li">
+            <span>标签页1</span>
+        </li>
+        <li class="ju-tab-li">
+            <span>标签页2</span>
+        </li>
+
+        <!-- 装饰性底边 -->
+        <!-- <div class="ju-tab-underline"></div> -->
+    </ul>
+
+    <ul class="ju-tab-content">
+        <li class="ju-tab-content-li">
+            标签页内容0 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia cupiditate provident, doloremque dignissimos facere dicta odit dolore laborum quaerat. Similique nemo non consectetur?
+        </li>
+        <li class="ju-tab-content-li">
+            标签页内容1
+        </li>
+        <li class="ju-tab-content-li">
+            标签页内容2
+        </li>
+    </ul>
+
+<script type="text/javascript">
+    var com = new juTab('.ju-tab', {
+        'autoLayout': true
+    });
+    // com.render();
+</script>
+</body>
+
+</html>

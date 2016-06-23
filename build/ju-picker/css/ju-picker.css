@@ -1,0 +1,157 @@
+@charset "UTF-8";
+/**
+ * Sass Constant variables and functions
+ */
+/**
+ * [px2Rem px转换为Rem单位]
+ * @param  {[type]} $px [像素]
+ * @return {[type]}     [rem单位值]
+ */
+.ju-picker {
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  border: 1px solid #fe5722;
+  border-radius: 3px; }
+  .ju-picker .ju-picker-selected {
+    position: relative;
+    width: 100%;
+    display: block;
+    text-indent: 10px; }
+  .ju-picker .ju-picker-selected::after {
+    position: absolute;
+    content: "▼";
+    color: #fe5722;
+    right: 10px; }
+
+.ju-picker-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.6);
+  -moz-transition: opacity .5s linear 0s;
+  -webkit-transition: opacity .5s linear 0s;
+  -o-transition: opacity .5s linear 0s;
+  -ms-transition: opacity .5s linear 0s;
+  transition: opacity .5s linear 0s;
+  display: none; }
+
+.ju-picker-content {
+  position: absolute;
+  z-index: 10000;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 195px;
+  overflow: hidden;
+  background: #FFF;
+  display: none; }
+  .ju-picker-content header {
+    height: 35px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 35px;
+    padding: 0 10px;
+    position: relative;
+    z-index: 9999;
+    background: #eee; }
+    .ju-picker-content header .ju-picker-choose {
+      float: left; }
+    .ju-picker-content header .ju-picker-done {
+      float: right;
+      color: #fe5722;
+      cursor: pointer; }
+  .ju-picker-content .ju-picker-main {
+    position: relative;
+    padding: 62.5px 5%;
+    height: 35px;
+    z-index: 9998; }
+  .ju-picker-content .ju-picker-indicator {
+    height: 33px;
+    width: 90%;
+    top: 62.5px;
+    border-top: 1px solid #9E9E9E;
+    border-bottom: 1px solid #9E9E9E;
+    position: absolute;
+    z-index: 9999; }
+  .ju-picker-content .ju-picker-mask {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100%;
+    z-index: 9999;
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.6)), -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.6));
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.6)), linear-gradient(to top, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.6));
+    background-position: top, bottom;
+    background-size: 100% 60.5px;
+    background-repeat: no-repeat; }
+  .ju-picker-content .ju-picker-items {
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    position: absolute; }
+  .ju-picker-content li {
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    height: 35px;
+    font-size: 18px;
+    line-height: 35px;
+    overflow: hidden;
+    touch-action: manipulation;
+    color: #9E9E9E;
+    text-overflow: ellipsis; }
+  .ju-picker-content .active {
+    color: #fe5722; }
+
+@keyframes fadeOut {
+  from {
+    opacity: 0;
+    -webkit-trasform: none;
+    transform: none; }
+  to {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    opacity: 1; } }
+
+@webkit-keyframes fadeOut {
+  from {
+    opacity: 0;
+    transform: none;
+    -webkit-transform: none; }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); }
+  to {
+    opacity: 1;
+    transform: none;
+    -webkit-transform: none; } }
+
+@webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); }
+  to {
+    opacity: 1;
+    transform: none;
+    -webkit-transform: none; } }
+
+.ju-picker-hide {
+  animation: .3s forwards fadeOut;
+  -webkit-animation: .3s forwards fadeOut; }
+
+.ju-picker-show {
+  animation: .3s forwards fadeIn;
+  -webkit-animation: .3s forwards fadeIn; }

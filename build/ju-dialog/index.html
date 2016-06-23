@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="borderbox">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="format-detection" content="telephone=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>弹窗</title>
+
+<link rel="stylesheet" href="./css/dialog.css">
+<style type="text/css">
+    #body {
+        width: 100%;
+        height: 2000px;
+        margin: 0;
+        padding: 0;
+    }
+
+    button {
+        height: 50px;
+        width: 100px;
+        background: #ff5722;
+        border: 0;
+        color: #fff;
+        font-size: 16px;
+    }
+</style>
+</head>
+<body id="body">
+    <button type="button" name="button" id="dialog">dialog</button>
+    <button type="button" name="button" id="alert">alert</button>
+    <button type="button" name="button" id="confirm">confirm</button>
+    <script type="text/javascript" src="./js/ju-dialog.js"></script>
+    <script type="text/javascript">
+
+    document.getElementById('dialog').addEventListener('click', function () {
+        new juDialog('dialog');
+    })
+
+    document.getElementById('alert').addEventListener('click', function () {
+        new juDialog('alert', {
+            backgroundClose: true,
+            onConfirm: function () {
+                new juDialog('alert')
+            }
+        });
+    })
+
+    document.getElementById('confirm').addEventListener('click', function () {
+        new juDialog('confirm');
+    })
+    </script>
+</body>
+</html>

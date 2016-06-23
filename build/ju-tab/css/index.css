@@ -1,0 +1,25 @@
+.ju-tab, .ju-tab li, .ju-tab-content, .ju-tab-content li {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+.ju-tab {
+  width: 100%;
+  height: 48px;
+  line-height: 48px;
+  background-color: #00bcd4; }
+  .ju-tab .ju-tab-li {
+    cursor: pointer;
+    float: left;
+    width: 20%;
+    text-align: center;
+    font-size: 16px; }
+  .ju-tab .ju-tab-li.active {
+    color: #fff;
+    background-color: #00a0b4; }
+
+.ju-tab-content .ju-tab-content-li {
+  display: none; }
+
+.ju-tab-content .ju-tab-content-li:first-child {
+  display: block; }

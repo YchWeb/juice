@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Picker</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/ju-picker.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="js/iscroll-probe.js"></script>
+    <script type="text/javascript" src="js/JuPicker.js"></script>
+</head>
+
+<body>
+    <h1>Picker</h1>
+    <div class="warpper">
+        <div class="ju-picker my-select" id="picker1">
+            <span class="ju-picker-selected">picker1</span>
+        </div>
+        <div class="ju-picker my-select" id="picker2">
+            <span class="ju-picker-selected">picker2</span>
+        </div>
+        <div class="ju-picker my-select" id="picker3">
+            <span class="ju-picker-selected">picker3</span>
+        </div>
+    </div>
+    <button onclick="update();">UpdateItems</button>
+    <script type="text/javascript">
+        var data = ['1', '2', '3', '4', '5', '6', '7', '8'];
+        var data2 = ['11', '22', '33', '44', '55', '66', '77', '88'];
+        var data3 = ['111', '222', '333', '444', '555', '666', '777', '888'];
+
+        var picker = new JuPicker("#picker1", {
+            title: '请选择',
+            done: '完成'
+        });
+        picker.render(data);
+        console.log(picker.getVal());
+
+        var picker2 = new JuPicker("#picker2", {
+            title: '请选择菜品',
+            done: '完成'
+        });
+
+        picker2.render(data2);
+        console.log(picker2.getVal());
+
+        var picker3 = new JuPicker("#picker3", {
+            title: '请选择日期',
+            done: '完成'
+        });
+
+        picker3.render(data3);
+        console.log(picker3.getVal());
+
+
+        // 动态更新Items
+        function update() {
+            var data = ['2', '3', '1', '8', '4'];
+            picker3.render(data);
+        }
+    </script>
+</body>
+
+</html>
