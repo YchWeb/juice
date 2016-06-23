@@ -1,0 +1,19 @@
+{
+  "name": "juice",
+  "version": "1.0.0",
+  "description": "merge from each component.",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.fangde.com:juice/juice.git"
+  },
+  "author": "Ziv",
+  "license": "ISC"
+}
