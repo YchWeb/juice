@@ -40,7 +40,7 @@ var juTab = function () {
 
         this.config = {
             'autoLayout': true,
-            'animate': true
+            'materialAnimate': true
         };
         // if (this.isJson(options)) {
         Object.assign(this.config, options);
@@ -108,4 +108,4 @@ var juTab = function () {
 
     return juTab;
 }();
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=test.js.map

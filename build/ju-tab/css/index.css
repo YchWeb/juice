@@ -13,7 +13,8 @@
     float: left;
     width: 20%;
     text-align: center;
-    font-size: 16px; }
+    font-size: 16px;
+    transition: all .2s linear; }
   .ju-tab .ju-tab-li.active {
     color: #fff;
     background-color: #00a0b4; }
