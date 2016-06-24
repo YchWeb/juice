@@ -1,6 +1,10 @@
 * {
   box-sizing: border-box; }
 
+html {
+  height: 100%;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -8,18 +12,67 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: #fff; 
+  height: 100%;
+  overflow: hidden;
 }
 
+.sidebar {
+  height: 100%;
+  float: left;
+  width: 20%;
+  background: #FF5722;
+}
+
+.sidebar .logo {
+  width: 200px;
+  margin: auto;
+  display: block;
+}
+
+.sidebar ul {
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li a {
+  display: block;
+  color: #FFF;
+  font-weight: 700;
+  text-decoration: none;
+  text-indent: 40px;
+  line-height: 40px;
+  width: 120px;
+  margin: auto;
+  position: relative;
+}
+
+.sidebar ul li:hover {
+  background: #e44715;
+}
+
+.sidebar ul li {
+  height: 40px;
+  list-style: none;
+  line-height: 40px;
+  position: relative;
+}
+
+.sidebar ul li a:before {
+    position: absolute;
+    left: -30px;
+    width: 10px;
+    height: 10px;
+    color: #fff;
+}
 
 .main {
-	width: 100%;
+	width: 80%;
+  height: 100%;
+  float: left;
 }
 
-.main ul li a {
-	width: 100;
-}
-
-.main ul li {
-	border-bottom: 1px solid #eee;
-	
+.main iframe {
+  width: 100%;
+  border: none;
+  height: 100%;
 }
