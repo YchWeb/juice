@@ -422,18 +422,16 @@ td,
 th {
   padding: 0;
 }
-
 @font-face {
     font-family: 'icomoon';
-    src:    url('fonts/icomoon.eot?hvcwik');
-    src:    url('fonts/icomoon.eot?hvcwik#iefix') format('embedded-opentype'),
-        url('fonts/icomoon.ttf?hvcwik') format('truetype'),
-        url('fonts/icomoon.woff?hvcwik') format('woff'),
-        url('fonts/icomoon.svg?hvcwik#icomoon') format('svg');
+    src:    url('fonts/icomoon.eot?4f2fqi');
+    src:    url('fonts/icomoon.eot?4f2fqi#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?4f2fqi') format('truetype'),
+        url('fonts/icomoon.woff?4f2fqi') format('woff'),
+        url('fonts/icomoon.svg?4f2fqi#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
-
 
 [class^="icon-"], [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
@@ -453,15 +451,36 @@ th {
 .icon-images:before {
     content: "\e900";
 }
+.icon-pacman:before {
+    content: "\e905";
+}
+.icon-envelop:before {
+    content: "\e906";
+}
+.icon-undo2:before {
+    content: "\e907";
+}
+.icon-redo2:before {
+    content: "\e908";
+}
+.icon-bubble:before {
+    content: "\e909";
+}
 .icon-bubbles:before {
     content: "\e901";
 }
 .icon-spinner6:before {
     content: "\e902";
 }
+.icon-equalizer:before {
+    content: "\e90a";
+}
 .icon-menu2:before {
     content: "\e903";
 }
 .icon-circle-right:before {
     content: "\e904";
+}
+.icon-lanyrd:before {
+    content: "\e90b";
 }

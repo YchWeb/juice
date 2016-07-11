@@ -1,0 +1,1 @@
+{"version":3,"sources":["ModuleA.js"],"names":[],"mappings":";;;;;;;;;;;;;IAOM,O;;;;;;;;;+BAEK;AACH,oBAAQ,GAAR,CAAY,cAAZ;AACH","file":"ModuleA.js","sourcesContent":["/**\n * @name ModuleA\n * @description test Module\n * @author  Ziv\n * @date 2016/06/08\n */\n\nclass ModuleA {\n    // 模块初始化\n    init() {\n        console.log('test module.')\n    }\n}"],"sourceRoot":"/source/"}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <title>Lazy Load Example.</title>
+    <script type="text/javascript" src="js/ju-lazy-load.js"></script>
+    <style type="text/css">
+            
+        body {
+            margin: 0;
+            padding: 0;
+            -webkit-overflow-scrolling: touch;
+            overflow-scrolling: touch;
+            scroll-behavior: smooth;
+            -webkit-scroll-behavior: smooth;
+        }
+
+        .img-list article {
+            width: 100%;
+            height: 200px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .img-list article img {
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+        }
+
+    </style>
+</head>
+
+<body>
+    <section class="img-list">
+        <article>
+            <img ju-img-src="http://s.cn.bing.net/az/hprichbg/rb/SkunkKit_ZH-CN10809503929_1920x1080.jpg" />
+            图1
+        </article>
+        <article>
+            <img ju-img-src="http://az29176.vo.msecnd.net/videocontent/MtShasta_CorbisRM_711C1165_015_768_HD_ZH-CN1453063878.jpg" />
+             图2
+        </article>
+        <article>
+            <img ju-img-src="http://s.cn.bing.net/az/hprichbg/rb/CallunaVulgaris_ZH-CN11090416298_1920x1080.jpg" />
+             图3
+        </article>
+        <article>
+            <img ju-img-src="https://drscdn.500px.org/photo/160376933/q%3D80_h%3D450/19893d2d54f0d9fb5a5b5954ce320dab" />
+             图4
+        </article>
+        <article>
+            <img ju-img-src="https://drscdn.500px.org/photo/160358265/q%3D80_h%3D450/54c926a90a25150d904279d30813423e" />
+             图5
+        </article>
+        <article>
+            <img ju-img-src="https://drscdn.500px.org/photo/160350441/q%3D80_h%3D600/a96848fad81d97f37140c89e4328c5b2" />
+             图6
+        </article>
+    </section>
+    <script type="text/javascript">
+        var lazyload = new JuLazyLoad();
+    </script>
+</body>
+
+</html>

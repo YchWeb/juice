@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>juice</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="js/index.js"></script>
+
+<style>
+/* demo样式 */
+body {
+    font-size: 24px;
+    font-family: "Helvetica Neue", Helvetica, "Microsoft Yahei", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
+}
+
+h1 {
+    color: orange;
+    text-align: center;
+    line-height: 100px;
+}
+</style>
+</head>
+
+<body>
+    <h1>Welcome to Juice!</h1>
+
+    <ul class="ju-tab">
+        <!-- <li data-tabindex="0"> -->
+        <li class="ju-tab-li active">
+            <span>标签页0</span>
+        </li>
+        <li class="ju-tab-li">
+            <span>标签页1</span>
+        </li>
+        <li class="ju-tab-li">
+            <span>标签页2</span>
+        </li>
+
+        <!-- 装饰性底边 -->
+        <!-- <div class="ju-tab-underline"></div> -->
+    </ul>
+
+    <ul class="ju-tab-content">
+        <li class="ju-tab-content-li">
+            <!-- 标签页内容0<br> -->
+            <div class="ju-checkbox">
+                <input type="checkbox" id="myname-one" checked="checked">
+                <label for="myname-one">复选框1号</label>
+            </div>
+            <div class="ju-checkbox ju-checkbox-circle">
+                <input type="checkbox" id="myname-two" checked="checked">
+                <label for="myname-two">复选框2号</label>
+            </div>
+            <div class="ju-radio">
+                <input type="checkbox" id="myname-three" checked="checked">
+                <label for="myname-three">复选框3号</label>
+            </div>
+            <div class="ju-radio ju-radio-orange">
+                <input type="radio" id="myname-four" checked="checked">
+                <label for="myname-four">复选框4号</label>
+            </div>
+            <div class="ju-radio">
+                <input type="radio" id="myradio-1" name="radio-sample" checked="checked">
+                <label for="myradio-1">单选框1号</label>
+            </div>
+            <div class="ju-checkbox ju-checkbox-circle">
+                <input type="radio" id="myradio-2" name="radio-sample">
+                <label for="myradio-2">单选框2号</label>
+            </div>
+            <div class="ju-checkbox">
+                <input type="radio" id="myradio-3" name="radio-sample">
+                <label for="myradio-3">单选框3号</label>
+            </div>
+            <div class="ju-radio ju-radio-orange">
+                <input type="radio" id="myradio-4" name="radio-sample">
+                <label for="myradio-4">单选框4号</label>
+            </div>
+        </li>
+        <li class="ju-tab-content-li">
+            标签页内容1
+            <br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia cupiditate provident, doloremque dignissimos facere dicta odit dolore laborum quaerat. Similique nemo non consectetur?
+        </li>
+        <li class="ju-tab-content-li">
+            标签页内容2
+        </li>
+    </ul>
+
+<script type="text/javascript">
+    var com = new JuTab('.ju-tab', {
+        'autoLayout': true
+    });
+    // com.render();
+</script>
+</body>
+
+</html>

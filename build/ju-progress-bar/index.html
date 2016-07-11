@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html class="borderbox">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="format-detection" content="telephone=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>process-bar</title>
+
+<link rel="stylesheet" href="./css/process-bar.css">
+<style type="text/css">
+    #body {
+        width: 100%;
+        height: 2000px;
+        margin: 0;
+        padding: 0;
+    }
+
+    button {
+        height: 50px;
+        width: 100px;
+        background: #ff5722;
+        border: 0;
+        color: #fff;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+</style>
+</head>
+<body id="body">
+    <button type="button" name="button" id="show">show</button>
+    <button type="button" name="button" id="hide">hide</button>
+    <script type="text/javascript" src="./js/ju-process-bar.js"></script>
+    <script type="text/javascript">
+    var bar = new JuProcessBar()
+    document.getElementById('show').addEventListener('click', function () {
+        bar.show()
+    })
+
+    document.getElementById('hide').addEventListener('click', function () {
+        bar.hide()
+    })
+    </script>
+</body>
+</html>
